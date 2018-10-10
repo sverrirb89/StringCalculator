@@ -14,6 +14,9 @@
 		
 		return sum(numberArray);
 		}
+		if(numberArray.length > 2){
+			return sum(numberArray);
+		}
 
 	}
 
@@ -24,9 +27,10 @@
 			total += parseInt(numberArray[i]);
 		}
 		return total;
+//		console.log(total);
 	}
 	
-	
+//add("2, 3,");
 	
 	module.exports = add;
 
