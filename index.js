@@ -1,5 +1,38 @@
-function add(numbers){
+	function add(numbers){
+
+		const numberArray =numbers.split(",");
+		
+	//	console.log(numberArray);
+		if(numbers === ""){
+			return 0;
+		}
+		
+		if(numberArray.length == 1){
+			return parseInt(numberArray[0]);
+		}
+		
+		if (numberArray.length == 2) {
+			if(numbers.includes(",")){
+		
+		return sum(numberArray);
+			}
+		}
 
 
-return numbers;
-}
+	}
+
+
+	function sum(numberArray){
+	var total = 0;
+	for (var i = 0; i < numberArray.length; i++){
+			total += parseInt(numberArray[i]);
+		}
+		return total;
+
+
+	}
+	
+	
+	
+	module.exports = add;
+
