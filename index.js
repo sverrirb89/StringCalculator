@@ -2,7 +2,6 @@
 
 		const numberArray =numbers.split(",");
 		
-	//	console.log(numberArray);
 		if(numbers === ""){
 			return 0;
 		}
@@ -12,12 +11,9 @@
 		}
 		
 		if (numberArray.length == 2) {
-			if(numbers.includes(",")){
 		
 		return sum(numberArray);
-			}
 		}
-
 
 	}
 
@@ -28,8 +24,6 @@
 			total += parseInt(numberArray[i]);
 		}
 		return total;
-
-
 	}
 	
 	
