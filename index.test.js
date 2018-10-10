@@ -28,3 +28,16 @@ it("should return 14", () => {
 it("should return 6", () => {
 	expect(add("1\n2,3")).toBe(6);
 });
+
+it("should return 6", () => {
+	expect(add("1\n2,3")).toBe(6);
+});
+
+it("Check if it has an negative number", () => {
+	expect(add("-1, 2")).toBe("Negatives are not allowed: -1");
+});
+
+it("Check if it has an negative number", () => {
+	expect(add("2, -4, 3, -5")).toBe("Negatives are not allowed:  -4, -5");
+});
+
