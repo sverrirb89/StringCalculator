@@ -41,3 +41,7 @@ it("Check if it has an negative number", () => {
 	expect(add("2, -4, 3, -5")).toBe("Negatives are not allowed:  -4, -5");
 });
 
+it("Numbers bigger then 1000 are ignored", () => {
+	expect(add("1001, 2")).toBe(2);
+});
+
