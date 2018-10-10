@@ -20,3 +20,11 @@ it("should return 10", () => {
 it("should return 15", () => {
 	expect(add("2, 5, 3, 5")).toBe(15);
 });
+
+it("should return 14", () => {
+	expect(add("1 \n5, 3, 5")).toBe(14);
+});
+
+it("should return 6", () => {
+	expect(add("1\n2,3")).toBe(6);
+});

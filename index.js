@@ -1,6 +1,7 @@
 	function add(numbers){
 
-		const numberArray =numbers.split(",");
+		var temp = numbers.replace(/\n/, ",");
+		var numberArray =temp.split(",");
 		
 		if(numbers === ""){
 			return 0;
@@ -27,10 +28,10 @@
 			total += parseInt(numberArray[i]);
 		}
 		return total;
-//		console.log(total);
+
 	}
 	
-//add("2, 3,");
+
 	
 	module.exports = add;
 
