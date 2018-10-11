@@ -4,7 +4,6 @@ it("should return zero on an empty string", () => {
 	expect(add("")).toBe(0);
 });
 
-
 it("should return 2", () => {
 	expect(add("2")).toBe(2);
 });
@@ -34,14 +33,18 @@ it("should return 6", () => {
 });
 
 it("Check if it has an negative number", () => {
-	expect(add("-1, 2")).toBe("Negatives are not allowed: -1");
+	expect(add("-1, 2")).toBe("Negatives are not allowed:-1");
 });
 
 it("Check if it has an negative number", () => {
-	expect(add("2, -4, 3, -5")).toBe("Negatives are not allowed:  -4, -5");
+	expect(add("2, -4, 3, -5")).toBe("Negatives are not allowed: -4, -5");
 });
 
 it("Numbers bigger then 1000 are ignored", () => {
 	expect(add("1001, 2")).toBe(2);
 });
+
+test(`should add a delimiter if the first two chars are "//".`, () => {
+    expect(add('//;\n 5; 10; 30; 100')).toBe(145);
+}); 
 
